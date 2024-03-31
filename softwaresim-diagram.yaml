@@ -1,0 +1,906 @@
+mouseWheel:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 606
+  horizontalOffset: 66
+  verticalOffset: 91
+addInfo:
+  tasks: []
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+  name: Kubeflow Tips and Best Practices
+  author: Nodematic
+  description: <ol><li>Find the sweet spot on modularity/reusability and compute
+    efficiency (cost and performance considerations)</li><li>Use non-default
+    compute resources for better utilization (cost savings) (i.e.,
+    set_cpu_request and set_memory_request)</li><li>Use accelerators where
+    required for Kubeflow tasks (i.e., set_accelerator_limit and
+    set_accelerator_type)</li><li>Larger and more unusual hardware
+    configurations tend to take longer to provision/setup</li><li>Utilize the
+    pipeline and task caching to accelerate development, testing, debugging, and
+    even production runs (including set_caching_options for the tasks where
+    needed)</li><li>Use the artifact specificity and type that makes sense
+    (Artifact vs. Dataset vs. Model), and use the automated metadata systems
+    (lineage, tracking, MLOps,...)</li><li>Use the sophistication of the
+    artifact system (e.g., .uri vs. .path) and automated bucket fuse mounting
+    (e.g., GCS Fuse at /gcs/) - this should avoid passing strings around, doing
+    string manipulations, and creating complex naming patterns</li><li>Use
+    sensible pipeline and task parameterization (for compiled pipe reuse), and
+    include default values whenever possible</li><li>Use repositories (could be
+    file systems, git repos, artifact registries, etc.) for easy compiled
+    pipeline/component reuse</li></ol>
+  objectives: []
+  experiments: []
+  experimentCols:
+    - field: name
+      header: Name
+height: 606
+connectors:
+  - id: Straight ConnectorDaADc
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    sourcePoint:
+      x: 403
+      y: 184
+    targetPoint:
+      x: 403
+      y: 228
+    sourceID: PythoncsoIu
+    targetID: KubeflowvKXbO
+    addInfo:
+      viewConnector: 0
+    zIndex: 2
+  - id: Orthogonal ConnectorWXTAL
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 403
+      y: 328
+    targetPoint:
+      x: 292
+      y: 372
+    sourceID: KubeflowvKXbO
+    targetID: Amazon Web Servicesdlu1l
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 6
+  - id: Orthogonal ConnectorMwAPs
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 403
+      y: 328
+    targetPoint:
+      x: 514
+      y: 372
+    sourceID: KubeflowvKXbO
+    targetID: KubernetesxiJCO
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 7
+  - id: Straight Connectorx0K6b
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    sourcePoint:
+      x: 403
+      y: 328
+    targetPoint:
+      x: 403
+      y: 397
+    sourceID: KubeflowvKXbO
+    targetID: Google Cloud PlatformpxFWo
+    addInfo:
+      viewConnector: 0
+    zIndex: 8
+  - id: Dashed Straight Nondirectional ConnectorbXmtP
+    targetDecorator:
+      shape: None
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 292
+      y: 496
+    targetPoint:
+      x: 292
+      y: 540
+    sourceID: Amazon Web Servicesdlu1l
+    targetID: Amazon Simple Storage ServiceVirX5
+    addInfo:
+      viewConnector: 0
+    zIndex: 12
+  - id: Dashed Straight Nondirectional ConnectorxPiKX
+    targetDecorator:
+      shape: None
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 403
+      y: 521
+    targetPoint:
+      x: 403
+      y: 554
+    sourceID: Google Cloud PlatformpxFWo
+    targetID: Cloud StorageZN6lt
+    addInfo:
+      viewConnector: 0
+    zIndex: 13
+  - id: Dashed Straight Nondirectional ConnectorOABLR
+    targetDecorator:
+      shape: None
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 514
+      y: 496
+    targetPoint:
+      x: 514
+      y: 540
+    sourceID: KubernetesxiJCO
+    targetID: MinIOSS12G
+    addInfo:
+      viewConnector: 0
+    zIndex: 14
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #353A86;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1659084940/sds_logos/Kubeflow_Black_87_pknfq4.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1659084939/sds_logos/Kubeflow_uzs5wk.png);"></div><div
+        class="c-text"><div class="c-title">Kubeflow</div><div
+        class="c-short-description">Deploying, monitoring, and maintaining
+        machine learning workflows on Kubernetes</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Kubeflow</div></div></div></div></div>'
+    id: KubeflowvKXbO
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Kubeflow
+        shortDescription: Deploying, monitoring, and maintaining machine learning
+          workflows on Kubernetes
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Kubeflow
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Kubeflow
+      editableName: Kubeflow
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Training Pipeline
+          type: Processor
+          portsIn:
+            job: model
+          portsOut:
+            job: model
+          serviceTime:
+            exp:
+              lambda: AverageTrainingDuration
+        - name: IDE
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: commit
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenCommits
+        - name: Deployment Tool
+          type: Processor
+          portsIn:
+            job: deployable
+          portsOut:
+            job: deployed
+          serviceTime:
+            exp:
+              lambda: AverageDeploymentDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Training Pipeline
+          AverageTrainingDuration: 1
+        - type: Generator
+          status: Idle
+          name: IDE
+          AverageTimeBetweenCommits: 1
+        - type: Processor
+          status: Idle
+          name: Deployment Tool
+          AverageDeploymentDuration: 1
+      name: Kubeflow
+      category: 9
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1659084939/sds_logos/Kubeflow_uzs5wk.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1659084939/sds_logos/Kubeflow__0484848_v0ybbn.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1659084940/sds_logos/Kubeflow_Black_87_pknfq4.png
+      color: "#353A86"
+      controlText: Kubeflow
+      selectedDynamicsView: 0
+    width: 300
+    height: 100
+    offsetX: 403
+    offsetY: 278
+    zIndex: 0
+    inEdges:
+      - Straight ConnectorDaADc
+    outEdges:
+      - Orthogonal ConnectorWXTAL
+      - Orthogonal ConnectorMwAPs
+      - Straight Connectorx0K6b
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3B77A7; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1663310164/sds_logos/Programming%20Languages/Python_A__Black_87_nciqru.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1663310164/sds_logos/Programming%20Languages/Python_A_sgxbzs.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>Python</div></div><hr class="c-underrule"
+        style="background-color: #3B77A7"></div>'
+    id: PythoncsoIu
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Python
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Python
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Python
+      editableName: Python
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Automated Task
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageTaskDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Automated Task
+          AverageTaskDuration: 1
+      name: Python
+      category: 7
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310164/sds_logos/Programming%20Languages/Python_A_sgxbzs.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310164/sds_logos/Programming%20Languages/Python_A__044448_g32jqq.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310164/sds_logos/Programming%20Languages/Python_A__Black_87_nciqru.png
+      controlText: Python
+      color: "#3B77A7"
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 403
+    offsetY: 122
+    zIndex: 1
+    outEdges:
+      - Straight ConnectorDaADc
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #212936; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/Amazon_Web_Services_Black_87_ilglxo.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/Amazon_Web_Services_go1dkr.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>AWS</div></div><hr class="c-underrule"
+        style="background-color: #212936"></div>'
+    id: Amazon Web Servicesdlu1l
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Amazon Web Services
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Amazon Web Services
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Amazon Web Services
+      editableName: AWS
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Deployment Target
+          type: Storage
+          portsIn:
+            put: deployed
+            get: request
+          portsOut:
+            stored: response
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Deployment Target
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Amazon Web Services
+      category: 2
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/Amazon_Web_Services_go1dkr.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/Amazon_Web_Services_Black_jvdwq1.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/Amazon_Web_Services_Black_87_ilglxo.png
+      color: "#212936"
+      controlText: Amazon Web Services
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 292
+    offsetY: 434
+    zIndex: 3
+    inEdges:
+      - Orthogonal ConnectorWXTAL
+    outEdges:
+      - Dashed Straight Nondirectional ConnectorbXmtP
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1686897630/sds_logos/Google_Cloud_Platform_V2_Black_87_t3ijkn.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1686897630/sds_logos/Google_Cloud_Platform_V2_k0j2om.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>GCP</div></div><hr class="c-underrule"
+        style="background-color: #3871e0"></div>'
+    id: Google Cloud PlatformpxFWo
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Cloud Platform
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Google Cloud Platform
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Cloud Platform
+      editableName: GCP
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Deployment Target
+          type: Storage
+          portsIn:
+            put: deployed
+            get: request
+          portsOut:
+            stored: response
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Deployment Target
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Cloud Platform
+      category: 2
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1686897630/sds_logos/Google_Cloud_Platform_V2_k0j2om.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1686897630/sds_logos/Google_Cloud_Platform_V2__044448_wcvymi.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1686897630/sds_logos/Google_Cloud_Platform_V2_Black_87_t3ijkn.png
+      color: "#3871e0"
+      controlText: Google Cloud Platform
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 403
+    offsetY: 459
+    zIndex: 4
+    inEdges:
+      - Straight Connectorx0K6b
+    outEdges:
+      - Dashed Straight Nondirectional ConnectorxPiKX
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #2c62e2; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/Kubernetes_Black_87_xnxpag.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/Kubernetes_lamy9f.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>Kubernetes</div></div><hr class="c-underrule"
+        style="background-color: #2c62e2"></div>'
+    id: KubernetesxiJCO
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Kubernetes
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Kubernetes
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Kubernetes
+      editableName: Kubernetes
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Scheduled Job Executor
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: trigger
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenJobs
+        - name: Deployment Target
+          type: Storage
+          portsIn:
+            put: deployed
+            get: request
+          portsOut:
+            stored: response
+        - name: Automated Task
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageTaskDuration
+        - name: Intrusion Detector
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: intrusion
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenIntrusions
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: Scheduled Job Executor
+          AverageTimeBetweenJobs: 1
+        - type: Storage
+          status: Idle
+          name: Deployment Target
+        - type: Processor
+          status: Idle
+          name: Automated Task
+          AverageTaskDuration: 1
+        - type: Generator
+          status: Idle
+          name: Intrusion Detector
+          AverageTimeBetweenIntrusions: 1
+      name: Kubernetes
+      category: 9
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/Kubernetes_lamy9f.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/Kubernetes_Black_nmc1j1.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/Kubernetes_Black_87_xnxpag.png
+      color: "#2c62e2"
+      controlText: Kubernetes
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 514
+    offsetY: 434
+    zIndex: 5
+    inEdges:
+      - Orthogonal ConnectorMwAPs
+    outEdges:
+      - Dashed Straight Nondirectional ConnectorOABLR
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_storage_Black_87_qiifqy.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_storage_donk5b.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>GCS</div></div><hr class="c-underrule"
+        style="background-color: #3871e0"></div>'
+    id: Cloud StorageZN6lt
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Cloud Storage
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Cloud Storage
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Cloud Storage
+      editableName: GCS
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Object Storage
+          type: Storage
+          portsIn:
+            put: write
+            get: read
+          portsOut:
+            stored: data
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Object Storage
+      name: Cloud Storage
+      category: 4
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_storage_donk5b.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_storage__044448_vsadzn.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/cloud_storage_Black_87_qiifqy.png
+      color: "#3871e0"
+      controlText: Cloud Storage
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 403
+    offsetY: 616
+    zIndex: 9
+    inEdges:
+      - Dashed Straight Nondirectional ConnectorxPiKX
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #232F3E; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1663310169/sds_logos/AWS/Architecture_Service_Icons/Arch_Amazon-Simple-Storage-Service_Black_87_uc0w65.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1663310169/sds_logos/AWS/Architecture_Service_Icons/Arch_Amazon-Simple-Storage-Service_sl02fr.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>S3</div></div><hr class="c-underrule"
+        style="background-color: #232F3E"></div>'
+    id: Amazon Simple Storage ServiceVirX5
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Amazon Simple Storage Service
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Amazon Simple Storage Service
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Amazon Simple Storage Service
+      editableName: S3
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Store
+          type: Storage
+          portsIn:
+            put: data
+            get: fetch
+          portsOut:
+            stored: data
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Data Store
+      name: Amazon Simple Storage Service
+      category: 1
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310169/sds_logos/AWS/Architecture_Service_Icons/Arch_Amazon-Simple-Storage-Service_sl02fr.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310169/sds_logos/AWS/Architecture_Service_Icons/Arch_Amazon-Simple-Storage-Service__044448_ouyv6r.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1663310169/sds_logos/AWS/Architecture_Service_Icons/Arch_Amazon-Simple-Storage-Service_Black_87_uc0w65.png
+      color: "#232F3E"
+      controlText: Simple Storage Service
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 292
+    offsetY: 602
+    zIndex: 10
+    inEdges:
+      - Dashed Straight Nondirectional ConnectorbXmtP
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #C72E49; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1679821202/sds_logos/MinIO_Black_87_asgkac.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1679821202/sds_logos/MinIO_cny3op.png);
+        border-radius: 10px"></div></div><div
+        class="c-undername"><div>MinIO</div></div><hr class="c-underrule"
+        style="background-color: #C72E49"></div>'
+    id: MinIOSS12G
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: MinIO
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: MinIO
+      status: N/A
+      size: sm
+      nodeType: html
+      title: MinIO
+      editableName: MinIO
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Store
+          type: Storage
+          portsIn:
+            put: data
+            get: fetch
+          portsOut:
+            stored: data
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Data Store
+      name: MinIO
+      category: 9
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1679821202/sds_logos/MinIO_cny3op.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1679821202/sds_logos/MinIO__044448_p6vlp4.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1679821202/sds_logos/MinIO_Black_87_asgkac.png
+      color: "#C72E49"
+      controlText: MinIO
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 124
+    offsetX: 514
+    offsetY: 602
+    zIndex: 11
+    inEdges:
+      - Dashed Straight Nondirectional ConnectorOABLR
+selectedItems:
+  width: 0
+  height: 0
